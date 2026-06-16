@@ -1,11 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Scratch FETEC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INFOTEC | Projetos Scratch</title>
+  <meta name="description" content="INFOTEC - jogos e projetos desenvolvidos pelos alunos de Informática para Internet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Teste</h1>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="inicio">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img class="brand-logo brand-logo-light" src="assets/infotec-logo-light.png" alt="INFOTEC">
+        <img class="brand-logo brand-logo-dark" src="assets/infotec-logo-dark.png" alt="INFOTEC">
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#destaque">Destaque</a>
+        <a href="#jogos">Jogos</a>
+        <a href="#redes">Contato</a>
+        <button class="theme-btn" type="button" aria-label="Alternar tema">☾</button>
+      </div>
+    </nav>
+
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Projetos • Scratch • Informática</span>
+        <h1>Mostra interativa de jogos <span>INFOTEC</span></h1>
+        <p>
+          Uma versão moderna, animada e responsiva da vitrine de projetos criados pelas turmas de
+          Informática para Internet, com destaque especial para o projeto Makey Makey Guitar Hero.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#jogos">Ver jogos</a>
+          <a class="btn btn-ghost" href="#destaque">Jogo em destaque</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal" aria-label="Painel visual do projeto">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="console-card scratch-card">
+          <div class="console-top">
+            <span></span><span></span><span></span>
+          </div>
+          <img class="scratch-logo" src="assets/scratch-logo.png" alt="Logo Scratch" />
+          <img class="scratch-cat" src="assets/scratch-cat.png" alt="Mascote Scratch" />
+          <h2>15+</h2>
+          <p>Projetos jogáveis no Scratch</p>
+          <div class="equalizer" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="scratch-intro section-pad reveal" aria-label="Scratch e criatividade">
+      <div class="scratch-copy">
+        <img src="assets/scratch-logo.png" alt="Scratch" />
+        <div>
+          <span class="eyebrow">Criatividade + programação</span>
+          <h2>Projetos feitos com Scratch</h2>
+          <p>Os jogos foram organizados em uma vitrine moderna, com visual leve, cards interativos e destaque para a identidade laranja do Scratch.</p>
+        </div>
+      </div>
+      <img class="scratch-intro-cat" src="assets/scratch-cat.png" alt="Mascote do Scratch correndo" />
+    </section>
+
+    <section class="featured section-pad" id="destaque">
+      <div class="section-title reveal">
+        <span class="eyebrow">Jogo em destaque</span>
+        <h2>Guitar Hero</h2>
+        <p>Projeto Makey Makey desenvolvido no Scratch, inspirado no estilo Guitar Hero.</p>
+      </div>
+
+      <article class="featured-card reveal">
+        <div class="featured-art featured-gallery" aria-label="Imagens do jogo Guitar Hero">
+          <img class="featured-main-img" src="assets/guitar-hero-cover.png" alt="Capa do Guitar Hero">
+          <div class="featured-thumbs" aria-hidden="true">
+            <img src="assets/guitar-hero-band.png" alt="">
+            <img src="assets/guitar-hero-rock.png" alt="">
+            <img src="assets/guitar-hero-gameplay.png" alt="">
+          </div>
+        </div>
+        <div class="featured-info">
+          <span class="pill">Makey Makey</span>
+          <h3>Guitar Hero</h3>
+          <p>
+            O Projeto Makey Makey é um jogo criado no Scratch baseado no Guitar Hero, desenvolvido por
+            Caio Henrique e Livia Cardia do 3º ano de Informática.
+          </p>
+          <div class="options-grid">
+            <div>
+              <strong>Opção 1</strong>
+              <span>Placa Makey Makey, cabo USB, cabos jacaré e massinha de modelar.</span>
+            </div>
+            <div>
+              <strong>Opção 2</strong>
+              <span>Use as setas: cima vermelho, baixo amarelo, direita azul e esquerda verde.</span>
+            </div>
+          </div>
+          <button class="btn btn-primary play-featured" type="button">Jogar / visualizar</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="games section-pad" id="jogos">
+      <div class="section-title reveal">
+        <span class="eyebrow">Scratch</span>
+        <h2>Jogos dos alunos</h2>
+        <p>Aqui estão os 15 jogos produzidos pelos alunos do 1º Ano de Informática para Internet.</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <label class="search-box" for="searchGame">
+          <span>⌕</span>
+          <input id="searchGame" type="search" placeholder="Pesquisar jogo..." autocomplete="off" />
+        </label>
+        <button class="btn btn-ghost shuffle-btn" type="button">Surpreenda-me</button>
+      </div>
+
+      <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="redes">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="footer-content section-pad">
+      <p>Projetos desenvolvidos pelas turmas 1°, 2° e 3° anos do curso Informática para Internet</p>
+      <a class="school-link" href="https://etecdpm.cps.sp.gov.br/" target="_blank" rel="noopener noreferrer">
+        etecdpm.cps.sp.gov.br <span>↗</span>
+      </a>
+      <div class="socials" aria-label="Redes sociais">
+        <a href="https://www.facebook.com/vestibulinhoetecdpm" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.3V6.7c0-.8.2-1.2 1.2-1.2H17V2.2c-.9-.1-1.8-.2-2.7-.2-2.7 0-4.5 1.6-4.5 4.6v1.7H7v3.7h2.8v10h4.1V12H17l.5-3.7H14Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/etecdarcypereira/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5-2.6a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17 6.6Z"/></svg>
+        </a>
+      </div>
+      <div class="footer-brandline">
+        <img class="footer-scratch" src="assets/scratch-logo.png" alt="Scratch" />
+        <img class="footer-logo" src="https://tavernf.github.io/scratchFetec/regua_horizontal_logo_horizontal_gov_cps_cor.png" alt="Centro Paula Souza e Governo do Estado de São Paulo" />
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="game-modal" id="gameModal" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" aria-label="Fechar">×</button>
+    <div class="modal-media">
+      <img id="modalImage" src="" alt="" />
+    </div>
+    <div class="modal-body">
+      <span class="pill" id="modalTag">Scratch</span>
+      <h3 id="modalTitle">Jogo</h3>
+      <div class="modal-scroll">
+        <p id="modalText">Projeto desenvolvido em Scratch.</p>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-primary" id="modalLink" href="#" target="_blank" rel="noopener noreferrer">Jogar</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>
